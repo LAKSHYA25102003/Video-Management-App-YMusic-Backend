@@ -9,6 +9,7 @@ import mongoose from "mongoose"
 import userRouter from "./Routes/user.js";
 import bucketRouter from "./Routes/bucket.js";
 import cardRouter from "./Routes/card.js";
+import historyRouter from "./Routes/history.js";
 
 
 app.use(express.json());
@@ -36,3 +37,4 @@ app.listen(5000,()=>{
 app.use("/api",userRouter);
 app.use("/api",bucketRouter);
 app.use("/api",cardRouter);
+app.use("/api",historyRouter);
